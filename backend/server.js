@@ -11,3 +11,4 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const sql = neon(`${process.env.DATABASE_URL}`);
+

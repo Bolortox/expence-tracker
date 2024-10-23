@@ -3,7 +3,7 @@ import { Up } from "../svg/Up";
 
 export const Dashboard = () => {
   return (
-    <main className="w-screen h-screen m-auto bg-slate-100 ">
+    <main className="w-screen h-screen m-auto bg-slate-100 max-w-screen-xl">
       <div className="h-[72px] flex justify-between items-center px-28 bg-white">
         <div className="flex gap-4">
           <Geld />
@@ -11,8 +11,13 @@ export const Dashboard = () => {
           <p>Records</p>
         </div>
 
-        <div>
+        <div className="flex justify-center items-center gap-5 rounded-3xl">
           <div className="btn  bg-blue-500 text-white">+Record</div>
+          <div className="avatar">
+            <div className="w-[40px] rounded">
+              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -69,12 +74,11 @@ export const Dashboard = () => {
                 <p className="font-bold">Lending & Renting</p>
                 <p className="text-slate-400">3 hours ago</p>
               </div>
-              
             </div>
             <div>
-                <p className="text-lime-500">- 1000$</p>
-                <div>DELETE</div>
-              </div>
+              <p className="text-lime-500">- 1000$</p>
+              <div>DELETE</div>
+            </div>
           </div>
         </div>
       </div>
