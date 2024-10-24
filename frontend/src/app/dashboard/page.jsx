@@ -1,4 +1,4 @@
-import { Dashboard } from "@/components/page";
+import { Dashboard } from "@/pages";
 
 export const Page = () => {
   return (

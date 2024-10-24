@@ -1,4 +1,4 @@
-import { Record } from "@/components/page/Record";
+import { Record } from "@/pages/Record";
 
 export const Page = () => {
   return (

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Eye } from "../svg/Eye";
 import { EyeC } from "../svg/EyeC";
 import { Geld } from "../svg/Geld";
@@ -10,8 +11,13 @@ export const Record = () => {
       <div className="h-[72px] flex justify-between items-center px-28 bg-white ">
         <div className="flex gap-4">
           <Geld />
-          <p>Dashboard</p>
-          <p>Records</p>
+          <Link href="/dashboard">
+            <button className="border-none bg-white">Dashboard</button>
+          </Link>
+
+          <Link href="/record">
+            <button className="border-none bg-white">Records</button>
+          </Link>
         </div>
 
         <div className="flex justify-center items-center gap-5 rounded-3xl">
@@ -62,26 +68,24 @@ export const Record = () => {
                 </div>
               </div>
 
-              <label className="swap swap-flip text-9xl">
+              <label className="swap">
                 <input type="checkbox" />
-
                 <div className="swap-on">
                   <Eye />
                 </div>
                 <div className="swap-off">
                   <EyeC />
                 </div>
-                <p className="text-sm pl-5">Houing & Renting</p>
               </label>
             </div>
           </div>
         </div>
 
         <div
-          className="flex flex-col gap-2 bg-red-500 w-full pt-10 px-3 
+          className="flex flex-col gap-2 w-full pt-10 px-3 
         "
         >
-          <div className="flex justify-between bg-slate-700 w-full h-[50px] ">
+          <div className="flex justify-between w-full h-[50px] ">
             <div className="flex gap-2">
               <Left />
               <p className="0">Last 30 Days</p>

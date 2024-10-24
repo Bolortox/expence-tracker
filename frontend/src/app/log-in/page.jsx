@@ -1,4 +1,4 @@
-import { LogInPage } from "@/components/page";
+import { LogInPage } from "@/pages";
 
 export const Page = () => {
   return (

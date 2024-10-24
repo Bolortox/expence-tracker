@@ -1,12 +1,11 @@
 "use client";
 
-import { Dashboard, LogInPage } from "@/components/page";
-import { Record } from "@/components/page/Record";
+import { Dashboard, LogInPage } from "@/pages";
+import { Record } from "@/pages/Record";
 
 export default function Home() {
   return (
     <main>
-      <LogInPage />
       <Dashboard />
       <Record />
     </main>
