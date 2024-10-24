@@ -1,4 +1,4 @@
-import { Dashboard } from "@/pages";
+import { Dashboard } from "@/pages/Dashboard";
 
 export const Page = () => {
   return (

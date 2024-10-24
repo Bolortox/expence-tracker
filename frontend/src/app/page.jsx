@@ -1,13 +1,11 @@
 "use client";
 
-import { Dashboard, LogInPage } from "@/pages";
-import { Record } from "@/pages/Record";
+import { LogInPage } from "@/pages/LogInPage";
 
 export default function Home() {
   return (
     <main>
-      <Dashboard />
-      <Record />
+      <LogInPage />
     </main>
   );
 }

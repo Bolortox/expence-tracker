@@ -1,9 +1,9 @@
-import { LogInPage } from "@/pages";
+import { LogInPage } from "@/pages/LogInPage";
 
 export const Page = () => {
   return (
     <div>
-      <LogInPage />
+      <LogInPage/>
     </div>
   );
 };
