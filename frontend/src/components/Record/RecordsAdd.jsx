@@ -6,12 +6,19 @@ import { Right } from "@/svg/Right";
 import { House } from "@/svg/House";
 import { useState } from "react";
 import { AddRecord } from "./AddRecord";
+import { AddCategory } from "./AddCategory";
 
 export const RecordsAdd = () => {
   const [showAddRecord, setShowAddRecord] = useState(false);
 
   const toggleAddRecord = () => {
     setShowAddRecord((prev) => !prev);
+  };
+
+  const [showCategory, setShowCategory] = useState(false);
+
+  const toggleShowCategory = () => {
+    setShowCategory((prev) => !prev);
   };
 
   return (
@@ -79,6 +86,11 @@ export const RecordsAdd = () => {
               <p className="">Transportation</p>
             </div>
           </div>
+
+          <button onClick={toggleShowCategory} className="text-xl pt-5">
+            + Add Category
+          </button>
+          {showCategory && <AddCategory />}
         </div>
       </div>
 
