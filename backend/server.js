@@ -2,10 +2,11 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
+import cors from "cors;";
+
 dotenv.config();
 
 const app = express();
-app.use(bodyParser.json());
 const port = 8000;
 
 app.use(bodyParser.json());
@@ -28,5 +29,5 @@ app.post("/users", (request, response) => {
 });
 
 app.listen(port, () => {
-  console.log("SERVER IS WORKING");
+  console.log(`http://localhost:${port}`);
 });
