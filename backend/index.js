@@ -2,10 +2,11 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
+import cors from "cors;";
+
 dotenv.config();
 
 const app = express();
-app.use(bodyParser.json());
 const port = 8000;
 
 app.use(bodyParser.json());
@@ -21,12 +22,12 @@ app.get("/", (request, response) => {
 });
 
 app.post("/users", (request, response) => {
-  const newUsers = { id : result ,name: request.body.name, age: request.body.age };
+  const newUsers = { name: request.body.name, age: request.body.age };
   users.push(newUsers);
   console.log(users);
   response.send("POST huselt irlee");
 });
 
 app.listen(port, () => {
-  console.log("SERVER IS WORKING");
+  console.log(`http://localhost:${port}`);
 });
