@@ -1,10 +1,9 @@
-import { SignUpPage } from "@/pages/SignUpPage";
+import SignUpPage from "@/pages/SignUpPage";
 
-export const Page = () => {
+export default function Page() {
   return (
     <div>
-    <SignUpPage/>
+      <SignUpPage />
     </div>
   );
-};
-export default Page;
+}

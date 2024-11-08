@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { RecordsAdd } from "@/components/Record/RecordsAdd";
 
-export const Record = () => {
+export default function Record() {
   return (
     <main>
       <div className="w-screen flex  justify-center items-center ">
@@ -12,4 +12,4 @@ export const Record = () => {
       </div>
     </main>
   );
-};
+}

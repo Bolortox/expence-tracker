@@ -7,6 +7,7 @@ import { House } from "@/svg/House";
 import { useState } from "react";
 import { AddRecord } from "./AddRecord";
 import { AddCategory } from "./AddCategory";
+import { PlusIcon } from "@/svg/PlusIcon";
 
 export const RecordsAdd = () => {
   const [showAddRecord, setShowAddRecord] = useState(false);
@@ -23,7 +24,7 @@ export const RecordsAdd = () => {
 
   return (
     <div className="w-[1200px] flex gap-6 relative">
-      <div className="w-[282px]  h-[912px] px-[16px] py-[24px]  flex flex-col gap-6 border border-gray-200 rounded-2xl bg-white">
+      <div className="w-[282px] h-[912px] px-[16px] py-[24px] flex flex-col gap-6 border border-gray-200 rounded-2xl bg-white">
         <div className="flex flex-col gap-[24px]">
           <p className="font-bold text-2xl">Records</p>
           <button
@@ -87,8 +88,11 @@ export const RecordsAdd = () => {
             </div>
           </div>
 
-          <button onClick={toggleShowCategory} className="text-xl pt-5">
-            + Add Category
+          <button
+            onClick={toggleShowCategory}
+            className=" pt-5 flex gap-2 items-center"
+          >
+            <PlusIcon /> Add Category
           </button>
           {showCategory && <AddCategory />}
         </div>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Geld } from "../svg/Geld";
 
-export const LogInPage = () => {
+export default function LogInPage() {
   return (
     <main>
       <div className=" w-screen h-screen flex">
@@ -33,7 +33,7 @@ export const LogInPage = () => {
 
             <div className="flex gap-2 justify-center mt-5">
               <p>Don't have account?</p>
-              <Link href="/sign-up">
+              <Link href="/sign-up  ">
                 <div className="text-blue-500">Sign up</div>
               </Link>
             </div>
@@ -43,4 +43,4 @@ export const LogInPage = () => {
       </div>
     </main>
   );
-};
+}
