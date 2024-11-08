@@ -8,7 +8,7 @@ import { Chart, ArcElement, Tooltip, Legend, registerables } from "chart.js";
 
 Chart.register(ArcElement, Tooltip, Legend);
 
-export const Dashboard = () => {
+export default function Dashboard() {
   const data = {
     labels: ["Red", "Blue", "Yellow", "Green"],
     datasets: [
@@ -64,4 +64,4 @@ export const Dashboard = () => {
       </div>
     </main>
   );
-};
+}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Geld } from "../svg/Geld";
 
-export const SignUpPage = () => {
+export default function SignUpPage() {
   return (
     <main>
       <div className=" w-screen h-screen flex">
@@ -49,4 +49,4 @@ export const SignUpPage = () => {
       </div>
     </main>
   );
-};
+}

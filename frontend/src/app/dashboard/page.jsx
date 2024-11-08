@@ -1,10 +1,9 @@
-import { Dashboard } from "@/pages/Dashboard";
+import Dashboard from "@/pages/Dashboard";
 
-export const Page = () => {
+export default function Page() {
   return (
     <div>
       <Dashboard />
     </div>
   );
-};
-export default Page;
+}

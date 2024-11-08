@@ -24,7 +24,7 @@ export const RecordsAdd = () => {
 
   return (
     <div className="w-[1200px] flex gap-6 relative">
-      <div className="w-[282px]  h-[912px] px-[16px] py-[24px]  flex flex-col gap-6 border border-gray-200 rounded-2xl bg-white">
+      <div className="w-[282px] h-[912px] px-[16px] py-[24px] flex flex-col gap-6 border border-gray-200 rounded-2xl bg-white">
         <div className="flex flex-col gap-[24px]">
           <p className="font-bold text-2xl">Records</p>
           <button

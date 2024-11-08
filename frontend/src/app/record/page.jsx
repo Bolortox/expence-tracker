@@ -1,10 +1,9 @@
-import { Record } from "@/pages/Record";
+import Record from "@/pages/Record";
 
-export const Page = () => {
+export default function Page() {
   return (
     <div>
       <Record />
     </div>
   );
-};
-export default Page;
+}
